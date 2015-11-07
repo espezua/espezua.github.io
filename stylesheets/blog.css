@@ -1,14 +1,53 @@
 /**************************
-      Blog
+   Page:  Blog Index
 **************************/
 
-#blog-list, .blog-post {
+.blog-list {
   float: left;
-  width: 700px;
-  margin-left: 5px;
+  width: 70%;
+  margin: 5px;
+}
+
+.blog-list-article {
+  margin-bottom: 50px;
 }
 
 aside {
   float: right;
-  width: 220px;
+  width: 25%;
+}
+
+
+
+
+
+/**************************
+   Page:  Blog Post
+**************************/
+.blog-post {
+  float: left;
+  width: 70%;
+  margin: 5px;
+}
+
+.blog-post-title {
+  color: #3a3a3a;
+}
+
+.blog-section {
+  margin-bottom: 50px;
+}
+
+.blog-img-boxmodel {
+  position: relative;
+  left: 20%;
+  height: 55%;
+  width: 55%;
+}
+
+.blog-img-padding {
+  position: relative;
+  left: 20%;
+  height: 50%;
+  width: 50%;
 }
