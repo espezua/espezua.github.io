@@ -1,8 +1,8 @@
 /**************************
-      Blog Index
+      Blog
 **************************/
 
-#blog-list {
+#blog-list, .blog-post {
   float: left;
   width: 700px;
 }
@@ -10,13 +10,4 @@
 aside {
   float: right;
   width: 220px;
-}
-
-
-/***************************
-      Blog Post
-***************************/
-.blog-post {
-  float: left;
-  width: 700px;
 }
