@@ -5,6 +5,7 @@
 #blog-list, .blog-post {
   float: left;
   width: 700px;
+  margin-left: 5px;
 }
 
 aside {
