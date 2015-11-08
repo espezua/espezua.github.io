@@ -27,7 +27,7 @@
       </nav>
     </header>
 
-    <div id="wrapper">
+    <div class="wrapper">
       <article class="blog-post">
         <section class="blog-section">
           <h2 class="blog-post-title">CSS Positioning: Padding vs. Border vs. Margin</h2>
@@ -38,38 +38,43 @@
         <section class="blog-section">
           <h3>The Box Model</h3>
           <p>Every HTML element you see on the page is treated as if it lives in its own box by the CSS box model, which the diagram below illustrates. </p>
-            <img class="blog-img-boxmodel" src="../imgs/boxmodel.png" alt="CSS Box Model"/>
-          <p>Inside every element you can have content such as a title or icon and it’s sized just enough to hold that content.   To adjust the size you can set the dimensions by using the height and width properties.  You can also control the appearance of the box by using the padding, border, and margin properties.</p>
+            <img class="blog-img" src="../imgs/boxmodel.png" alt="CSS Box Model"/>
+          <p>Inside every element you can have content such as a title or icon and it’s sized just enough to hold that content.   To adjust the size you can set the dimensions by using the height and width properties.  You can also control the appearance of the box by using the padding, border, and margin properties.  When ever the padding, border, and margin properites are used they will increase the width and height of the box.</p>
         </section>
 
         <section class="blog-section">
           <h3>Padding</h3>
-          <p>The space that surrounds the area between the content and border is called padding.  You can choose to add padding to every side, one side, a few sides, or specify no amount at all. By specifying how much space should appear between the content and border you can make it easier for people to read the contents.  As a result, when the padding is increased that value is added onto the width of the box.</p>
-            <img class="blog-img-padding" src="../imgs/padding.png" alt="CSS Box Model"/>
+          <p>The space that surrounds the area between the content and border is called padding.  You can choose to add padding to every side, one side, a few sides, or specify no amount at all. By specifying how much space should appear between the content and border you can make it easier for people to read the element's contents such as a paragraph.</p>
+            <img class="blog-img" src="../imgs/padding.png" alt="Example of applying the padding property"/>
         </section>
 
-        <h3>Border</h3>
-        <p></p>
-
-        <h3>Margin</h3>
-        <p></p>
+        <section class="blog-section">
+          <h3>Border</h3>
+          <p>Around every element's box is a border separating it from other elements on the page whether you see it or not.  The border is the element's edge that surrounds the content and padding. You can control the border's width, style, and color of any side of the element but you must set a value for each or the border won't appear.</p>
+          <img class="blog-img" src="../imgs/border.png" alt="Example of applying the border porperty">
+        </section>
+        <section>
+          <h3>Margin</h3>
+          <p>The final way you can change the appearance of an element is by using the margin property.  Margin is outside the edge of an element and it clears an area outside of the border to create gaps between elements.</p>
+          <img class="blog-img" src="../imgs/margin.png" alt="Example of applying the margin porperty">
+        </section>
 
       </article>
       <aside>
-        <section id="profile-photo">
-          <img src="#" alt="Picture of Jenna Espezua" />
+        <section class="profile-photo" >
+          <img class="profile-photo" src="../imgs/profile-photo.jpg" alt="Picture of Jenna Espezua" />
         </section>
-        <section id="recent-posts">
-          <h4>Recent Posts<h4>
+        <section class="recent-posts">
+          <h4>Archive</h4>
           <ul>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
+            <li><a href="git.html">All About the CLI and Version Control</a></li>
+            <li><a href="css-concepts.html">CSS Positioning: Padding vs. Border vs. Margin</a></li>
           </ul>
         </section>
       </aside>
     </div> <!-- #wrapper -->
     <footer>
-      <ul id="contact-links-footer">
+      <ul class="contact-links-footer">
         <li><a href="mailto:jennaespezua@gmail.com"><img src="../imgs/gmail.png" alt="Email" /></a></li>
         <li><a href="https://github.com/espezua"><img src="../imgs/GitHub.png" alt="GitHub" /></a></li>
         <li><a href="https://www.linkedin.com/in/jennaespezua"><img src="../imgs/linkedIn.png" alt="LinkedIn" /></a></li>

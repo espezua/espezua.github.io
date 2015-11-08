@@ -5,11 +5,15 @@
 .blog-list {
   float: left;
   width: 70%;
-  margin: 5px;
+  margin: 5px 5px 5px 10px;
 }
 
 .blog-list-article {
   margin-bottom: 50px;
+}
+
+.blog-list-article p {
+  line-height: 1.6em;
 }
 
 aside {
@@ -18,6 +22,40 @@ aside {
 }
 
 
+.profile-photo img {
+  float: right;
+  height: 70%;
+  width: 70%;
+  border-radius: 5%;
+  margin-bottom: 20px;
+}
+
+.recent-posts {
+  /*border: 1px solid #3a3a3a;*/
+  width: 70%;
+  height: 70%;
+  float: right;
+  padding-top: 0;
+
+}
+
+.recent-posts h4 {
+  font-weight: bold;
+  font-weight: .8em;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.recent-posts ul {
+  padding: 0;
+  margin-top: 0;
+}
+
+.recent-posts ul li {
+  text-align: left;
+  font-weight: medium;
+  margin-bottom: 10px;
+  font-size: .75em;
+}
 
 
 
@@ -27,7 +65,7 @@ aside {
 .blog-post {
   float: left;
   width: 70%;
-  margin: 5px;
+  margin: 5px 5px 5px 10px;
 }
 
 .blog-post-title {
@@ -38,16 +76,19 @@ aside {
   margin-bottom: 50px;
 }
 
-.blog-img-boxmodel {
+.blog-section h3 {
+  margin-bottom: 0;
+  font-size: 1.3em;
+}
+
+.blog-section p {
+  line-height: 1.6em;
+  margin-top: 8px;
+}
+
+.blog-img {
   position: relative;
   left: 20%;
   height: 55%;
   width: 55%;
-}
-
-.blog-img-padding {
-  position: relative;
-  left: 20%;
-  height: 50%;
-  width: 50%;
 }
