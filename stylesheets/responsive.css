@@ -1,0 +1,47 @@
+/********************************
+       Navigation
+********************************/
+@media screen and (min-width: 950px) {
+
+  header {
+    padding-bottom: 5px;
+    border-bottom: 6px solid #0474ff;
+  }
+
+  .logo {
+    float: left;
+    margin-left: 5%;
+  }
+
+  .logo h1{
+    font-size: 1.75em;
+  }
+
+  .logo h2 {
+    font-size: .8em;
+  }
+
+  nav{
+    background: #2c9ce8;
+  }
+  nav ul {
+    float: right;
+    margin-right: 5%;
+  }
+}
+
+
+
+/******************************
+   Page: Blog Pages
+******************************/
+
+@media screen and (max-width: 840px) {
+  .blog-aside {
+    display: none;
+  }
+
+  .blog-list, .blog-post {
+    width: 95%;
+  }
+}
