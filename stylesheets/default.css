@@ -9,7 +9,7 @@ body {
   font-weight: normal;
 }
 
-.wrapper {
+#wrapper-home {
   max-width: 940px;
   margin: 0 auto;
   padding: 0;
@@ -114,22 +114,22 @@ footer {
 ************************************/
 
 .page-gallery {
-  margin: 0;
+  margin: 0 0 0 7%;
   padding: 0;
   list-style: none;
 }
 
 .page-gallery li {
   float: left;
-  width: 30%;
   height: 30%;
-  margin: 10px;
+  width: 30%;
+  margin: 20px 5px;
 }
 
 .page-gallery img {
   border-radius: 4%;
-  height: 85%;
-  width: 85%;
+  height: 75%;
+  width: 75%;
 }
 
 

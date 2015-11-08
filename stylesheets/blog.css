@@ -2,10 +2,16 @@
    Page:  Blog Index
 **************************/
 
+.wrapper {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0;
+}
+
 .blog-list {
   float: left;
   width: 70%;
-  margin: 5px 5px 5px 10px;
+  margin: 0 0 0 2.5%;
 }
 
 .blog-list-article {
@@ -16,9 +22,10 @@
   line-height: 1.6em;
 }
 
-aside {
+.blog-aside {
   float: right;
   width: 25%;
+  margin: 5% 2.5% 0 0;
 }
 
 
@@ -31,7 +38,6 @@ aside {
 }
 
 .recent-posts {
-  /*border: 1px solid #3a3a3a;*/
   width: 70%;
   height: 70%;
   float: right;
@@ -65,7 +71,7 @@ aside {
 .blog-post {
   float: left;
   width: 70%;
-  margin: 5px 5px 5px 10px;
+  margin: 0 0 0 2.5%;
 }
 
 .blog-post-title {
