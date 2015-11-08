@@ -1,4 +1,4 @@
-![Link to my website](http://espezua.github.io/)
+http://espezua.github.io/index.html
 
 ###What did you learn about CSS padding, borders, and margin by doing this challenge?
 This challenge helped to reinforce the concepts I learned this week about the CSS box model and how to set values for the padding, border, and margin properties. Padding is the space between the element's content and border.  The border is the edge that surrounds the element and won't appear unless you set a value for is width, color, and style.  Margin is outside of the border and it helps to clear a space between elements.  By setting values for the padding, border, and margin properties of HTML elements on my website I was able to explore how to create the effect I was looking to achieve.
