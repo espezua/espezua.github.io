@@ -20,119 +20,6 @@ a {
 }
 
 
-/*****************************
-        Header
-******************************/
-
-header {
-  float: left;
-  margin: 0 0 30px 0;
-  padding: 5px 0 0 0;
-  width: 100%;
-}
-
-.logo {
-  text-align: center;
-  margin: 0;
-}
-
-.logo h1{
-  font-family: 'Dosis', sans-serif;
-  margin: 15px 0;
-  font-size: 2em;
-  font-weight: medium;
-  line-height: .75em;
-}
-
-.logo h2 {
-  font-size: 1.1em;
-  margin: -5px 0 0;
-  font-weight: normal;
-}
-
-
-
-/******************************
-        Navigation
-********************************/
-
-nav {
-  text-align: center;
-  padding: 10px 0;
-  margin: 20px 0 0;
-}
-
-nav ul {
-  list-style: none;
-  margin: 0 10px;
-  padding: 0;
-}
-
-nav li {
-  display: inline-block;
-}
-
-nav a {
-  font-weight: 700;
-  font-size: 1.1em;
-  padding: 15px 10px;
-}
-
-
-
-/*********************************
-        Footer
-*********************************/
-
-footer {
-  font-size: 1em;
-  text-align: center;
-  clear: both;
-  padding-top: 20px;
-}
-
-.contact-links-footer {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.contact-links-footer li {
-  display: inline-block;
-  margin: 5px;
-}
-
-.contact-links-footer img {
-  margin: 0 5px;
-}
-
-
-
-
-/************************************
-          PAGE: Home
-************************************/
-
-.page-gallery {
-  margin: 0 0 0 7%;
-  padding: 0;
-  list-style: none;
-}
-
-.page-gallery li {
-  float: left;
-  height: 30%;
-  width: 30%;
-  margin: 20px 5px;
-}
-
-.page-gallery img {
-  border-radius: 4%;
-  height: 75%;
-  width: 75%;
-}
-
-
 
 /***********************************
            Colors
@@ -174,3 +61,127 @@ nav a, nav a:visited {
 nav a.selected, nav a:hover {
   color: #3a3a3a;
 }
+
+/*****************************
+        Header
+******************************/
+
+header {
+  float: left;
+  margin: 0 0 20px;
+  padding: 5px 0 0;
+  width: 100%;
+}
+
+.logo {
+  text-align: center;
+  margin: 0;
+}
+
+.logo h1{
+  font-family: 'Dosis', sans-serif;
+  margin: 20px 0 10px;
+  font-size: 2em;
+  font-weight: medium;
+  line-height: .75em;
+}
+
+.logo h2 {
+  font-size: 1.3em;
+  margin: 0;
+  padding-bottom: 5px;
+  font-weight: normal;
+}
+
+
+
+/******************************
+        Navigation
+********************************/
+
+nav {
+  text-align: center;
+  padding: 10px 0;
+  margin: 20px 0 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0 10px;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  font-weight: 700;
+  font-size: 1.05em;
+  padding: 15px 10px;
+}
+
+
+
+/*********************************
+        Footer
+*********************************/
+
+footer {
+  font-size: 1em;
+  text-align: center;
+  clear: both;
+  padding: 20px 0;
+}
+
+.contact-links-footer {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-links-footer li {
+  display: inline-block;
+  margin: 5px;
+}
+
+footer p {
+  margin-top: 8px;
+}
+
+.contact-links-footer img {
+  margin: 0 5px;
+  height: 75%;
+  width: 75%;
+}
+
+
+
+
+/************************************
+          PAGE: Home
+************************************/
+
+.page-gallery {
+  margin: 0 0 0 7%;
+  padding: 0;
+  list-style: none;
+}
+
+.page-gallery li {
+  float: left;
+  height: 30%;
+  width: 30%;
+  margin: 20px 5px;
+}
+
+.page-gallery img {
+  border-radius: 4%;
+  height: 75%;
+  width: 75%;
+}
+
+.page-gallery img:hover {
+  box-shadow: 0 0 10px #3a3a3a;
+}
+
