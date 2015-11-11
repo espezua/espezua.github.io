@@ -45,7 +45,7 @@ footer {
   color: #3a3a3a;
 }
 
-h1, h2 {
+.logo h1, .logo h2{
   color: #fff;
 }
 
@@ -59,7 +59,7 @@ nav a, nav a:visited {
 }
 
 nav a.selected, nav a:hover {
-  color: #3a3a3a;
+  color: #FF868C;
 }
 
 /*****************************
