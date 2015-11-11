@@ -9,7 +9,7 @@ body {
   font-weight: normal;
 }
 
-#wrapper-home {
+.wrapper-main {
   max-width: 940px;
   margin: 0 auto;
   padding: 0;
@@ -159,7 +159,7 @@ footer p {
 
 
 /************************************
-          PAGE: Home
+          Page: Home
 ************************************/
 
 .page-gallery {
@@ -185,3 +185,14 @@ footer p {
   box-shadow: 0 0 10px #3a3a3a;
 }
 
+
+
+/************************************
+          Pages: Coming Soon
+************************************/
+
+.coming-soon {
+  text-align: center;
+  padding: 20% 0;
+  margin: 0;
+}
