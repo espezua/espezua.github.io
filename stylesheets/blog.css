@@ -86,8 +86,17 @@
 }
 
 .blog-section p {
-  line-height: 1.6em;
+  line-height: 1.8em;
+  word-spacing: 2.5px;
   margin-top: 8px;
+}
+
+.blog-section ul {
+  margin-top: 5px;
+}
+
+.blog-section ul li {
+  padding-bottom: 5px;
 }
 
 .blog-img {
@@ -95,4 +104,37 @@
   left: 20%;
   height: 55%;
   width: 55%;
+}
+
+.blog-imgs-1 {
+  position: relative;
+  left: 3%;
+  height: 45%;
+  width: 45%;
+}
+
+.blog-imgs-2 {
+  float: right;
+  margin-top: 35px;
+  height: 50%;
+  width: 50%;
+}
+
+.blog-imgs-3 {
+  position: relative;
+  left: 15%;
+  height: 28%;
+  width: 28%;
+}
+
+.blog-imgs-4 {
+  float: right;
+  margin-right: 15%;
+  height: 28%;
+  width: 28%;
+}
+
+.blog-section-list-title {
+  margin-top: 30px;
+  margin-bottom: 0px;
 }
