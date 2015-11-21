@@ -28,6 +28,15 @@
     float: right;
     margin-right: 5%;
   }
+
+  .contact-info {
+    width: 55%
+    left: 22.5%;
+  }
+
+  .contact-info h3 {
+    font-size: 1.2em;
+  }
 }
 
 
@@ -43,12 +52,6 @@
 
   .blog-list, .blog-post {
     width: 95%;
-  }
-
-  .contact-links-footer img {
-    margin: 0 5px;
-    height: 65%;
-    width: 65%;
   }
 
 }
