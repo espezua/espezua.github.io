@@ -188,6 +188,34 @@ footer p {
 
 
 /************************************
+          Pages: Contact
+************************************/
+
+.contact-info {
+  margin: 0;
+  padding: 15% 0 10%;
+  text-align: center;
+  width: 75%;
+  position: relative;
+  left: 12.5%;
+}
+
+.contact-info h3 {
+  margin: 0;
+  font-size: 1.1em;
+  position: relative;
+  top: 5%;
+}
+
+.contact-info p {
+  font-size: 0.9em;
+  line-height: 1.8em;
+  word-spacing: 2.5px;
+  margin-top: 1%;
+}
+
+
+/************************************
           Pages: Coming Soon
 ************************************/
 
