@@ -144,6 +144,20 @@
   width: 28%;
 }
 
+.blog-imgs-5 {
+  position: relative;
+  left: 27.5%;
+  height: 45%;
+  width: 45%;
+}
+
+.blog-imgs-6 {
+  position: relative;
+  left: 15%;
+  height: 70%;
+  width: 70%;
+}
+
 .blog-section-list-title {
   margin-top: 30px;
   margin-bottom: 0px;
