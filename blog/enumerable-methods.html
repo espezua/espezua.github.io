@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Jenna Espezua's Blog | Ruby's Enumerable Methods</title>
+    <meta charset= "utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,600|Dosis:400,700,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css" >
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css" >
+    <link rel="stylesheet" type="text/css" href="../stylesheets/responsive.css" >
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="logo">
+        <h1>Jenna Espezua's Blog</h1>
+        <h2>Web Developer</h2>
+      </a>
+      <nav>
+        <ul>
+         <li><a href="../index.html">Home</a></li>
+         <li><a href="../about.html">About</a></li>
+         <li><a href="../portfolio.html">Portfolio</a></li>
+         <li><a href="../resume.html">Resume</a></li>
+         <li><a href="index.html">Blog</a></li>
+         <li><a href="../techined.html">TechinEd</a></li>
+         <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="wrapper-blog">
+      <article class="blog-post">
+        <section class="blog-section">
+          <h2 class="blog-post-title">Ruby's Enumerable Methods</h2>
+          <h4>Sunday, November 22, 2015</h4>
+          <h3>What is an enumerable?</h3>
+          <p>In Ruby, you can iterate through each element in a class like the array, hash, set, and range collection classes using the "each" method.  These classes have defined the "each" method, so they can mixin the "Enumerable" module.  Methods in the "Enumberable" module allow you to iterate through the elements in a collection and do something to each element in the collection.</p>
+        </section>
+
+        <section class="blog-section">
+          <h3>What are some enumerable methods?</h3>
+          <ul>
+            <li>#each_slice: iterates through n elements in a collection</li>
+            <li>#map: modifies each element according to a block's conditions and returns a new array with the modified elements</li>
+            <li>#find_all: returns an array containing all the elements that returned a true value from the conditions in a block</li>
+            <li>#group_by: takes a block and returns a hash that groups all the different types of returns from the block</li>
+          </ul>
+        </section>
+
+        <section class="blog-section">
+          <h3>How can I use the #group_by method?</h3>
+          <p>The #group_by method seems to be a pretty handy and awesome method, so here are some ways to use the method.</p>
+          <section>
+            <h4 class="blog-section-list-title">#group_by with a Range</h4>
+            <p>Let's say you wanted to know how many times each number in a range from 1 to 20 was divisible by 4. After running the #group_by method on the range it will return a hash with the keys 0, 1, 2, 3, 4, and 5.  The values for each key in the hash will be an array of values that returned 0, 1, 2, 3, 4, or 5 when divided by 4.</p>
+            <img class="blog-imgs-5" src="imgs/group_by_range.png" alt="Example of using the #group_by method with a range.">
+          </section>
+          <section>
+            <h4 class="blog-section-list-title">#group_by with an Array</h4>
+            <p>If you had an array listing the names of people you could group the names by the length of the string.</p>
+            <img class="blog-imgs-6" src="imgs/group_by_array.png" alt="Example of using the #group_by method with an array.">
+          </section>
+          <section>
+            <h4 class="blog-section-list-title">#group_by with a Hash</h4>
+            <p>Since the holidays are just around the corner, maybe you've used a hash to list of all the people you need to buy a gift for and whether you've done so.  You could use the #group_by method to help shorten your list to just the people you haven't purchased a gift for.</p>
+            <img class="blog-imgs-6" src="imgs/group_by_hash.png" alt="Example of using the #group_by method with a hash."/>
+          </section>
+        </section>
+
+      </article>
+      <aside class="blog-aside">
+        <section class="profile-photo" >
+          <img src="../imgs/profile-photo.jpg" alt="Picture of Jenna Espezua" />
+        </section>
+        <section class="recent-posts">
+          <h4>Archive</h4>
+          <ul>
+            <li><a href="git.html">All About the CLI and Version Control</a></li>
+            <li><a href="css-concepts.html">CSS Positioning: Padding vs. Border vs. Margin</a></li>
+            <li><a href="arrays-hashes.html">Ruby Arrays and Hashes</a></li>
+            <li><a href="enumerable-methods.html">Ruby's Enumerable Methods</a></li>
+          </ul>
+        </section>
+      </aside>
+    </div> <!-- #wrapper -->
+    <footer>
+      <ul class="contact-links-footer">
+        <li><a href="mailto:jennaespezua@gmail.com"><img src="../imgs/gmail.png" alt="Email" /></a></li>
+        <li><a href="https://github.com/espezua"><img src="../imgs/GitHub.png" alt="GitHub" /></a></li>
+        <li><a href="https://www.linkedin.com/in/jennaespezua"><img src="../imgs/linkedIn.png" alt="LinkedIn" /></a></li>
+      </ul>
+      <p>&copy; 2015 Jenna Espezua</p>
+    </footer>
+  </body>
+</html>
