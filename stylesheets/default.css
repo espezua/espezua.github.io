@@ -214,6 +214,24 @@ footer p {
   margin-top: 1%;
 }
 
+/************************************
+          Pages: About
+************************************/
+.about-info {
+  margin: 0;
+  padding: 15% 0 10%;
+  text-align: center;
+  width: 75%;
+  position: relative;
+  left: 12.5%;
+}
+
+.about-info p {
+  font-size: 1.1em;
+  line-height: 1.8em;
+  word-spacing: 2.5px;
+  margin-top: 1%;
+}
 
 /************************************
           Pages: Coming Soon
