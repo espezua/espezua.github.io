@@ -162,3 +162,38 @@
   margin-top: 30px;
   margin-bottom: 0px;
 }
+
+.blog-imgs-7 {
+  position: relative;
+  left: 5%;
+  height: 43%;
+  width: 43%;
+}
+
+.blog-imgs-8 {
+  float: right;
+  margin-right: 10%;
+  height: 33%;
+  width: 33%;
+}
+
+.blog-imgs-9 {
+  position: relative;
+  left: 15%;
+  height: 30%;
+  width: 30%;
+}
+
+.blog-imgs-10 {
+  float: right;
+  margin-right: 25%;
+  height: 23%;
+  width: 23%;
+}
+
+.blog-imgs-5 {
+  position: relative;
+  left: 30%;
+  height: 40%;
+  width: 40%;
+}
