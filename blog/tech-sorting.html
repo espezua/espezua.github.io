@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Jenna Espezua's Blog | Sorting Algorithms</title>
+    <meta charset= "utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,600|Dosis:400,700,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css" >
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css" >
+    <link rel="stylesheet" type="text/css" href="../stylesheets/responsive.css" >
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="logo">
+        <h1>Jenna Espezua's Blog</h1>
+        <h2>Web Developer</h2>
+      </a>
+      <nav>
+        <ul>
+         <li><a href="../index.html">Home</a></li>
+         <li><a href="../about.html">About</a></li>
+         <li><a href="../portfolio/index.html">Portfolio</a></li>
+         <li><a href="../resume.html">Resume</a></li>
+         <li><a href="index.html">Blog</a></li>
+         <li><a href="../techined.html">TechinEd</a></li>
+         <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="wrapper-blog">
+      <article class="blog-post">
+        <section class="blog-section">
+          <h2 class="blog-post-title">Sorting Algorithms</h2>
+          <h3>A Quick Overview</h3>
+          <h4>Saturday, December 12, 2015</h4>
+          <p>Sorting algorithms put elements of a list in a certain order, with most working by comparing the data being sorted. There are many different sorting algorithms and they are often classified to help you understand the advantages and limitations of each one.  Some ways to classify the algorithms are by computational complexity in terms of the list's size, memory usage, recursion, stability, and the general method used for sorting. To optimize the use of algorithms that require input data to be in sorted lists, i.e. search and merge algorithms, it is necessary to use efficient sorting.</p>
+        </section>
+
+        <section class="blog-section">
+          <h3>Insertion Sort</h3>
+          <p>Insertion sort iterates over an unordered list of elements and assumes part of the array is sorted.  For each iteration it removes one entry, finds the location it belongs in, and inserts it into a sorted part.  Insertion sort repeats until no input elements remain and is good for sorting arrays that have less than 100 items.</p>
+        </section>
+
+        <section class="blog-section">
+          <h3>Selection Sort</h3>
+          <p>This algorithm works by scanning an array for the smallest unsorted item and then swapping it with the first element. Then it looks for the next smallest element and swaps it with the second element.  This continues until the entire array is sorted.</p>
+        </section>
+
+        <section class="blog-section">
+          <h3>Bubble Sort</h3>
+          <p>The bubble sort algorithm repeatedly steps through an array by comparing adjacent items and swapping them if required. This process repeats until it makes a pass all the way through the list without swapping any items.</p>
+        </section>
+
+        <section class="blog-section">
+          <h3>Merge Sort</h3>
+          <p>A merge sort is another comparison based sorting algorithm and is based on the divide-and-conquer paradigm. It divides the entire dataset into subarrays, each having one element. Next it compares every two elements and swaps them if the first should come after the second.  Then it merges these sublists to create new sorted sublists.  This process continues until one sorted list is produced.<p>
+        </section>
+
+        <section class="blog-section">
+          <h3>Quicksort</h3>
+          <p>Quicksort is the most popular sorting algorithm and is also based on the divide-and-conquer paradigm.  It picks the average element known as a "pivot" item.  Then it partitions the entire dataset in half by adding items to the sublist "less than pivot" or the sublist "greater than pivot" and puts the pivot item between the two lists.  It repeats this process on the left side of the list until it is comparing only two items and left side is sorted.  After the left side is sorted it performs the same process on the right side and does this until the complete list is sorted.</p>
+        </section>
+
+        <section class="blog-section">
+          <h3>Helpful Resources to Learn More About Sorting Algorithms</h3>
+          <ul>
+            <li><a href="http://www.sorting-algorithms.com/">Sorting Algorithm Animations</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Sorting_algorithm">Wikipedia: Sorting algorithm</a></li>
+            <li><a href="http://betterexplained.com/articles/sorting-algorithms/">BetterExplained: Sorting Algorithms</a></li>
+            <li><a href="https://www.youtube.com/watch?v=ZZuD6iUe3Pc">Visualization and Comparison of Sorting Algorithms</a>- video</li>
+            <li><a href="https://www.youtube.com/watch?v=kPRA0W1kECg">15 Sorting Algorithms in 6 Minutes</a>- video</li>
+            <li><a href="http://sorting.at/">Sorting Algorithms</a>- visual representations of sorting algorithms using Generative Art</li>
+            <li><a href="https://www.cs.usfca.edu/~galles/visualization/ComparisonSort.html">Comparison Sorting Algorithms</a>- interactive animations</li>
+            <li><a href="https://en.wikibooks.org/wiki/Algorithm_Implementation/Sorting">Algorithm Implementation: Sorting</a>- shows various sorting algorithms written in different programming languages</li>
+          </ul>
+        </section>
+
+      </article>
+      <aside class="blog-aside">
+        <section class="profile-photo" >
+          <img src="../imgs/profile-photo.jpg" alt="Picture of Jenna Espezua" />
+        </section>
+        <section class="recent-posts">
+          <h4>Archive</h4>
+          <ul>
+            <li><a href="git.html">All About the CLI and Version Control</a></li>
+            <li><a href="css-concepts.html">CSS Positioning: Padding vs. Border vs. Margin</a></li>
+            <li><a href="arrays-hashes.html">Ruby Arrays and Hashes</a></li>
+            <li><a href="enumerable-methods.html">Ruby's Enumerable Methods</a></li>
+            <li><a href="ruby-classes.html">Ruby Classes</a></li>
+            <li><a href="javascript.html">Looping in Ruby vs. Looping in JavaScript</a></li>
+            <li><a href="tech-sorting.html">Sorting Algorithms: A Quick Overview</a></li>
+          </ul>
+        </section>
+      </aside>
+    </div> <!-- #wrapper -->
+    <footer>
+      <ul class="contact-links-footer">
+        <li><a href="mailto:jennaespezua@gmail.com"><img src="../imgs/gmail.png" alt="Email" /></a></li>
+        <li><a href="https://github.com/espezua"><img src="../imgs/GitHub.png" alt="GitHub" /></a></li>
+        <li><a href="https://www.linkedin.com/in/jennaespezua"><img src="../imgs/linkedIn.png" alt="LinkedIn" /></a></li>
+      </ul>
+      <p>&copy; 2015 Jenna Espezua</p>
+    </footer>
+  </body>
+</html>
