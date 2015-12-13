@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Jenna Espezua | Portfolio</title>
+    <meta charset= "utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,600|Dosis:400,700,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="../../stylesheets/default.css" >
+    <link rel="stylesheet" type="text/css" href="../../stylesheets/responsive.css" >
+    <link rel="stylesheet" type="text/css" href="../../stylesheets/cheat-sheets-stylesheets/sql-cheat-sheet.css" >
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="logo">
+        <h1>Jenna Espezua</h1>
+        <h2>Web Developer</h2>
+      </a>
+      <nav>
+        <ul>
+         <li><a href="../../index.html">Home</a></li>
+         <li><a href="../../about.html" >About</a></li>
+         <li><a href="../index.html">Portfolio</a></li>
+         <li><a href="../../resume.html">Resume</a></li>
+         <li><a href="../../blog/index.html">Blog</a></li>
+         <li><a href="../../techined.html" >TechinEd</a></li>
+         <li><a href="../../contact.html" >Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="wrapper-main">
+      <header>
+        <h1>SQL: CRUD Cheat Sheet</h1>
+      </header>
+
+      <section class="column-1">
+        <article>
+          <h2>Intro and Syntax</h2>
+          <p>SQL is a standard language for accessing and manipulating databases.</p>
+          <h3>Database Tables</h3>
+          <ul>
+            <li>each table identified by name</li>
+            <li>tables contain records(rows) with data</li>
+          </ul>
+          <h3>SQL Statements</h3>
+          <ul>
+            <li>not case sensitive but convention is to write all keywords in uppercase</li>
+            <li>each statement needs to end with a semicolon</li>
+          </ul>
+        </article>
+
+        <article>
+          <h2>Create</h2>
+          <p>Create or add data to the database.</p>
+
+          <h3>CREATE DATABASE</h3>
+          <details open>
+            <summary><code>CREATE DATABASE dbname;</code></summary>
+            <p>Used to create a database.</p>
+          </details>
+
+          <h3>CREATE TABLE</h3>
+          <details open>
+            <summary><code>CREATE TABLE table_name(column_name1 data_type(size),...);</code></summary>
+            <p>Used to create a table in a database.</p>
+          </details>
+
+          <h3>CREATE INDEX</h3>
+          <details open>
+            <summary><code>CREATE INDEX index_name ON table_name (column_name);</code></summary>
+            <p>Creates an index on a table and duplicate values are allowed.</p>
+          </details>
+
+          <h3>CREATE UNIQUE INDEX</h3>
+          <details open>
+            <summary><code>CREATE UNIQUE INDEX index_name ON table_name (column_name);</code></summary>
+            <p>Creates a unique index on a table.</p>
+          </details>
+
+          <h3>Constraints</h3>
+          <p>Constraints are the rules enforced on data columns on tables and are used to limit the type of data that can go into a table.
+          <ul>
+            <li>NOT NULL: ensures that a column cannot have NULL values</li>
+            <li>PRIMARY KEY: uniquely identifies each rows/records in a database table</li>
+            <li>FOREIGN KEY: uniquely identifies rows/records in any another database table</li>
+          </ul>
+          <h3>INSERT INTO</h3>
+          <details open>
+            <summary><code>INSERT INTO table_name VALUES (value1,...);</code></summary>
+            <p>Used to insert new records in a table.</p>
+          </details>
+
+          <details open>
+            <summary><code></code></summary>
+            <p></p>
+          </details>
+
+          <details open>
+            <summary><code></code></summary>
+            <p></p>
+          </details>
+
+          <details open>
+            <summary><code></code></summary>
+            <p></p>
+          </details>
+        </article>
+      </section>
+
+      <section class="column-2">
+        <article>
+          <h2>Data Types</h2>
+          <h3>String</h3>
+          <ul>
+            <li>char- fixed length n; must have exactly n characters</li>
+            <li>varchar- variable length n; can have up to x characters</li>
+            <li>text- variable length; for data greater than 255 characters </li>
+          </ul>
+          <h3>Numeric</h3>
+          <ul>
+            <li>integer</li>
+            <li>fixed point- fixed decimal place to a fixed precision</li>
+            <li>float point- float, decimal place isn't fixed to a particular precision</li>
+          </ul>
+          <h3>Date & Time</h3>
+          <ul>
+            <li>date- year, month, and day values</li>
+            <li>time- hour, minute, and second values</li>
+            <li>datetime- both date and time values</li>
+          </ul>
+        </article>
+
+        <article>
+          <h2></h2>
+          <p></p>
+
+          <details open>
+            <summary><code></code></summary>
+            <p></p>
+          </details>
+
+          <details open>
+            <summary><code></code></summary>
+            <p></p>
+          </details>
+
+          <details open>
+            <summary><code></code></summary>
+            <p></p>
+          </details>
+
+          <details open>
+            <summary><code></code></summary>
+            <p></p>
+          </details>
+        </article>
+      </section>
+
+    </main>
+
+    <footer>
+      <ul class="contact-links-footer">
+        <li><a href="mailto:jennaespezua@gmail.com"><img src="../../imgs/gmail.png" alt="Email" /></a></li>
+        <li><a href="https://github.com/espezua"><img src="../../imgs/GitHub.png" alt="GitHub" /></a></li>
+        <li><a href="https://www.linkedin.com/in/jennaespezua"><img src="../../imgs/linkedIn.png" alt="LinkedIn" /></a></li>
+      </ul>
+      <p>&copy; 2015 Jenna Espezua</p>
+    </footer>
+
+  </body>
+</html>
