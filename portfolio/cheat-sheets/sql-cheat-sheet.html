@@ -30,21 +30,26 @@
 
     <main class="wrapper-main">
       <header>
-        <h1>SQL: CRUD Cheat Sheet</h1>
+        <h1>SQL Cheat Sheet</h1>
       </header>
 
       <section class="column-1">
         <article>
           <h2>Intro and Syntax</h2>
-          <p>SQL is a standard language for accessing and manipulating databases.</p>
+          <p>SQL is a standard language for accessing and manipulating databases.</p><br>
+          <p>Data Definition Language or DDL deals with defining databases and the tables.</p><br>
+          <p>Data Manipulation Language or DML deals with the CRUD operations.</p><br>
+          <p>CRUD means Create, Read, Update, and Delete with each having SQL commands.</p><br>
+
           <h3>Database Tables</h3>
           <ul>
             <li>each table identified by name</li>
             <li>tables contain records(rows) with data</li>
           </ul>
+
           <h3>SQL Statements</h3>
           <ul>
-            <li>not case sensitive but convention is to write all keywords in uppercase</li>
+            <li>are not case sensitive but convention is to write all keywords in uppercase</li>
             <li>each statement needs to end with a semicolon</li>
           </ul>
         </article>
@@ -84,26 +89,78 @@
             <li>PRIMARY KEY: uniquely identifies each rows/records in a database table</li>
             <li>FOREIGN KEY: uniquely identifies rows/records in any another database table</li>
           </ul>
+
           <h3>INSERT INTO</h3>
           <details open>
             <summary><code>INSERT INTO table_name VALUES (value1,...);</code></summary>
             <p>Used to insert new records in a table.</p>
+          </details><br>
+
+        </article>
+
+        <article>
+          <h2>Read</h2>
+          <p>Searching, filtering, and limiting the result set.</p>
+
+          <h3>SELECT</h3>
+          <details open>
+            <summary><code>SELECT column_name,column_name FROM table_name;</code></summary>
+            <p>and</p>
+            <summary><code>SELECT * FROM table_name;</code></summary>
+            <p>Used to select data from a database.</p>
           </details>
 
+          <h3>WHERE</h3>
           <details open>
-            <summary><code></code></summary>
-            <p></p>
+            <summary><code>SELECT column_name,column_name FROM table_name WHERE column_name operator value;</code></summary>
+            <p>Used to filter records.</p>
           </details>
 
+          <h3>AND</h3>
           <details open>
-            <summary><code></code></summary>
-            <p></p>
+            <summary><code>SELECT column_name,column_name FROM table_name WHERE column_name operator value AND column_name operator value;</code></summary>
+            <p>Operator displays a record if both the first condition and the second condition are true.</p>
           </details>
 
+          <h3>OR</h3>
           <details open>
-            <summary><code></code></summary>
-            <p></p>
+            <summary><code>SELECT column_name,column_name FROM table_name WHERE column_name operator value OR column_name operator value;</code></summary>
+            <p>Operator displays a record if either the first condition or the second condition is true.</p>
           </details>
+
+          <h3>ORDER BY</h3>
+          <details open>
+            <summary><code>SELECT column_name, column_name FROM table_name ORDER BY column_name ASC|DESC, column_name ASC|DESC;</code></summary>
+            <p>Used to sort the result-set.</p>
+          </details>
+
+          <h3>IN</h3>
+          <details open>
+            <summary><code>SELECT column_name(s) FROM table_name WHERE column_name IN (value1,value2,...);</code></summary>
+            <p>Operator allows you to specify multiple values in a WHERE clause.</p>
+          </details>
+
+          <h3>BETWEEN</h3>
+          <details open>
+            <summary><code>SELECT column_name(s) FROM table_name WHERE column_name BETWEEN value1 AND value2;</code></summary>
+            <p>Operator selects values(numbers, text, or dates) within a range.</p>
+          </details>
+
+          <h3>LIKE</h3>
+          <details open>
+            <summary><code>SELECT column_name(s) FROM table_name WHERE column_name LIKE pattern;</code></summary>
+            <p>Operator is used in a WHERE clause to search for a specified pattern in a column.</p>
+          </details>
+
+          <h3>Wildcard Characters</h3>
+          <p>Used with the LIKE operator to search for data within a table.</p>
+          <ul>
+            <li>%: subsitute for zero or more characters</li>
+            <li>_: substitute for a single character</li>
+            <li>[charlist]: sets and ranges of characters to match</li>
+            <li>[^charlist] or [!charlist]: matches only a character not specified within the brackets</li>
+          </ul>
+
         </article>
       </section>
 
@@ -112,47 +169,123 @@
           <h2>Data Types</h2>
           <h3>String</h3>
           <ul>
-            <li>char- fixed length n; must have exactly n characters</li>
-            <li>varchar- variable length n; can have up to x characters</li>
-            <li>text- variable length; for data greater than 255 characters </li>
+            <li>CHAR: fixed length n(0-255); must have exactly n characters</li>
+            <li>VARCHAR: variable length n(0-255); can have up to x characters</li>
+            <li>TEXT: variable length; for data greater than 255 characters </li>
           </ul>
           <h3>Numeric</h3>
           <ul>
-            <li>integer</li>
-            <li>fixed point- fixed decimal place to a fixed precision</li>
-            <li>float point- float, decimal place isn't fixed to a particular precision</li>
+            <li>INTEGER</li>
+            <li>FLOAT</li>
+            <li>DECIMAL</li>
           </ul>
           <h3>Date & Time</h3>
           <ul>
-            <li>date- year, month, and day values</li>
-            <li>time- hour, minute, and second values</li>
-            <li>datetime- both date and time values</li>
+            <li>DATE: YYYY-MM-DD</li>
+            <li>TIME: HH:MM:SS</li>
+            <li>DATETIME: YYYY-MM-DD HH:MM:SS</li>
+            <li>TIMESTAMP: YYYYMMDDHHMMSS</li>
           </ul>
         </article>
 
         <article>
-          <h2></h2>
-          <p></p>
+          <h2>Read continued...<h2>
 
+          <h3>Joins</h3>
+          <p>Used to combine rows from two or more tables based on a common field between them.</p>
+
+          <h4>INNER JOIN</h4>
           <details open>
-            <summary><code></code></summary>
-            <p></p>
+            <summary><code>SELECT column_name(s) FROM table1 INNER JOIN table2 ON table1.column_name=table2.column_name;</code></summary>
+            <p>Selects all rows from both tables as long as there is a match between the columns in both tables.</p>
           </details>
 
+          <h4>LEFT JOIN</h4>
           <details open>
-            <summary><code></code></summary>
-            <p></p>
+            <summary><code>SELECT column_name(s) FROM table1 INNER JOIN table2 ON table1.column_name=table2.column_name;</code></summary>
+            <p>or</p>
+            <summary><code>SELECT column_name(s) FROM table1 LEFT OUTER JOIN table2 ON table1.column_name=table2.column_name;</code></summary>
+            <p>Returns all rows from the left table (table1), with the matching rows in the right table (table2). The result is NULL in the right side when there is no match.</p>
           </details>
 
+          <h4>RIGHT JOIN</h4>
           <details open>
-            <summary><code></code></summary>
-            <p></p>
+            <summary><code>SELECT column_name(s) FROM table1 RIGHT JOIN table2 ON table1.column_name=table2.column_name;</code></summary>
+            <p>or</p>
+            <summary><code>SELECT column_name(s) FROM table1 RIGHT OUTER JOIN table2 ON table1.column_name=table2.column_name;</code></summary>
+            <p>Returns all rows from the right table (table2), with the matching rows in the left table (table1). The result is NULL in the left side when there is no match.</p>
           </details>
 
+
+          <h4>FULL OUTER JOIN</h4>
           <details open>
-            <summary><code></code></summary>
-            <p></p>
+            <summary><code>SELECT column_name(s) FROM table1 FULL OUTER JOIN table2 ON table1.column_name=table2.column_name;</code></summary>
+            <p>Returns all rows from the left table (table1) and from the right table (table2) by combining the result of both LEFT and RIGHT joins.</p>
+          </details><br>
+        </article>
+
+        <article>
+          <h2>Update</h2>
+          <p>Update or edit entries in a database.</p>
+
+          <h3>UPDATE</h3>
+          <details open>
+            <summary><code>UPDATE table_name SET column1=value1, column2=value2,... WHERE some_column=some_value;</code></summary>
+            <p>Used to update existing records in a table.</p>
+          </details><br>
+        </article>
+
+        <article>
+          <h2>Delete</h2>
+          <p>Remove or delete data from a database.</p>
+
+          <h3>DELETE</h3>
+          <details open>
+            <summary><code>DELETE FROM table_name WHERE some_column=some_value;</code></summary>
+            <p>Used to delete records(rows) in a table.</p>
+          </details><br>
+        </article>
+
+        <article>
+          <h2>SQL Functions</h2>
+          <p>Built-in functions for performing calculations on data.</p>
+
+          <h3>SQL Aggregate Functions</h3>
+          <p>SQL aggregate functions return a single value, calculated from values in a column.
+          <ul>
+            <li>AVG(): returns the average value</li>
+            <li>COUNT(): returns the number of rows</li>
+            <li>FIRST(): returns the first value</li>
+            <li>LAST(): returns the last value</li>
+            <li>MAX(): returns the largest value</li>
+            <li>MIN(): returns the smallest value</li>
+            <li>SUM(): returns the sum</li>
+          </ul>
+
+          <h4>GROUP BY</h4>
+          <details open>
+            <summary><code>SELECT column_name, aggregate_function(column_name) FROM table_name WHERE column_name operator value GROUP BY column_name;</code></summary>
+            <p>Used in conjunction with the aggregate functions to group the result-set by one or more columns.</p>
           </details>
+
+          <h4>HAVING</h4>
+          <details open>
+            <summary><code>SELECT column_name, aggregate_function(column_name) FROM table_name WHERE column_name operator value GROUP BY column_name HAVING aggregate_function(column_name) operator value;</code></summary>
+            <p>Clause was added to SQL because the WHERE keyword could not be used with aggregate functions.</p>
+          </details>
+
+          <h3>SQL Scalar Functions</h3>
+          <p>SQL scalar functions return a single value, based on the input value.
+          <ul>
+            <li>UCASE(): converts a field to uppper case</li>
+            <li>LCASE(): converts a field to lower case</li>
+            <li>MID(): extract characters from a text field</li>
+            <li>LEN(): returns the length of a text field</li>
+            <li>ROUND(): rounds a numeric field to the number of decimals specified</li>
+            <li>NOW(): returns the current system date and time</li>
+            <li>FORMAT(): formats how a field is to be display</li>
+          </ul>
+
         </article>
       </section>
 
