@@ -84,8 +84,6 @@
   margin: 0 0 0 2.5%;
 }
 
-
-
 .blog-section {
   margin-bottom: 50px;
 }
@@ -196,4 +194,25 @@
   left: 30%;
   height: 40%;
   width: 40%;
+}
+
+figure {
+  position: relative;
+  left: 5%;
+}
+
+figure img {
+  position: relative;
+  left: 20%;
+}
+
+figcaption {
+  font-size: .6em;
+  position: relative;
+  left: 10%;
+}
+
+.selection-sort {
+  position: relative;
+  left: 35%;
 }
