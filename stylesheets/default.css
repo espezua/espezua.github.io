@@ -251,6 +251,51 @@ footer p {
 }
 
 /************************************
+    Pages: Technology in Education
+************************************/
+.teched-title {
+  text-align: center;
+  margin: 0;
+  font-size: 2em;
+}
+
+.teched-section {
+  margin-bottom: 50px;
+}
+
+.teched-section p{
+  line-height: 1.8em;
+  word-spacing: 2.5px;
+}
+
+.teched-section section {
+  margin-bottom: 30px;
+}
+
+.teched-section h3{
+  font-size: 1.7em;
+  margin-bottom: 0;
+}
+
+.teched-section section h4{
+  font-size: 1.3em;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+.teched-section section p{
+  line-height: 1.8em;
+  word-spacing: 2.5px;
+  margin: 0;
+}
+
+.teched-section section ul{
+  line-height: 1.8em;
+  word-spacing: 2.5px;
+  margin-top: 0;
+}
+
+/************************************
           Pages: Coming Soon
 ************************************/
 
