@@ -252,6 +252,11 @@ footer p {
   margin-left: 5%;
 }
 
+.portfolio-gallery img {
+  width: 50%;
+
+}
+
 /************************************
     Pages: Technology in Education
 ************************************/
